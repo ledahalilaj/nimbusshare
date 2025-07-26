@@ -2,19 +2,26 @@
 <html>
 <head>
   <title>Upload | NimbusShare</title>
-  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>NimbusShare</h1>
-  <p>"Create. Upload. Share."</p>
+  <header>
+    <div>
+      <h2>NimbusShare</h2>
+      <p>"Create. Upload. Share."</p>
+    </div>
+    <a href="index.html">Home</a>
+  </header>
 
   <form id="uploadForm">
-    <input type="file" name="file" id="fileInput" required><br><br>
-    <input type="text" name="description" id="descriptionInput" placeholder="Enter Description" required><br><br>
+    <label>Choose File:</label>
+    <input type="file" id="fileInput" required>
+    
+    <label>Enter Description:</label>
+    <input type="text" id="descriptionInput" required>
+    
     <button type="submit">Upload</button>
   </form>
-
-  <a href="index.html">← Back to Home</a>
 
   <script src="script.js"></script>
 </body>
