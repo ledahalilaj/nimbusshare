@@ -1,12 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NimbusShare</title>
+  <title>NimbusShare - Home</title>
+  <meta charset="UTF-8">
 </head>
 <body>
-  <h1>Welcome to NimbusShare</h1>
-  <p>This is your static site hosted on Azure for FREE 🎉</p>
+  <header>
+    <h1>NimbusShare</h1>
+    <p>"Create. Upload. Share."</p>
+    <a href="upload.html">Upload Media</a>
+  </header>
+
+  <input type="text" placeholder="Search media...">
+
+  <div>
+    <label><input type="radio" name="filter" checked> All</label>
+    <label><input type="radio" name="filter"> Images</label>
+    <label><input type="radio" name="filter"> Videos</label>
+    <label><input type="radio" name="filter"> Audio</label>
+  </div>
+
+  <div id="mediaGrid">
+    <!-- Media cards inserted here by JavaScript -->
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
