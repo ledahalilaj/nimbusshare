@@ -1,27 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
   <title>Upload | NimbusShare</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <div>
+    <div class="logo">
       <h2>NimbusShare</h2>
       <p>"Create. Upload. Share."</p>
     </div>
-    <a href="index.html">Home</a>
+    <a class="nav-link" href="index.html">Home</a>
   </header>
 
-  <form id="uploadForm">
-    <label>Choose File:</label>
-    <input type="file" id="fileInput" required>
-    
-    <label>Enter Description:</label>
-    <input type="text" id="descriptionInput" required>
-    
-    <button type="submit">Upload</button>
-  </form>
+  <main>
+    <form id="uploadForm">
+      <label>Choose File:</label>
+      <input type="file" id="fileInput" required>
+
+      <label>Enter Description:</label>
+      <input type="text" id="descriptionInput" required>
+
+      <button type="submit">Upload</button>
+    </form>
+  </main>
 
   <script src="script.js"></script>
 </body>
